@@ -49,7 +49,7 @@ class Solution(object):
             self.permute(res, num, index + 1)
             num[i], num[index] = num[index], num[i]
 
-    def permuteUnique(self, num):
+    def permuteUnique(self, nums):
         # iterative solution
         res = [[]]
         for i in range(len(nums)):
